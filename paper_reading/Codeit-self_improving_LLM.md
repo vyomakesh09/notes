@@ -37,12 +37,13 @@ Methods
 			# search set ( ARC eval )
 			# ARC train set
 		# Learning 
-  			![Screenshot from 2024-02-08 16-53-11](https://github.com/vyomakesh09/notes/assets/54256947/bbcb63d0-3a49-49e1-bd3e-43a45177a492)
+  			
+![Screenshot from 2024-02-08 16-53-11](https://github.com/vyomakesh09/notes/assets/54256947/50d7fdd6-8059-4590-ab50-4a4273cc38a6)
 
 	Expert Iteration ( ExIt ) 
 	DreamCoder  
 	# temperature t = 0.95 
-	# sample n p = 24  
+	# sample n(p) = 24  
 
 This method iterates between 	
 	# program sampling and hindsight relabeling and,
