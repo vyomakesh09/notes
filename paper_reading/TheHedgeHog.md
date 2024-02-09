@@ -5,11 +5,20 @@ https://arxiv.org/pdf/2402.04347.pdf
 
 Likekly to be a replacement to softmax attention 
 
+![Screenshot from 2024-02-09 16-00-03](https://github.com/vyomakesh09/notes/assets/54256947/913d2ba7-7d7d-4c92-96d8-89b3bd7e8ae2)
+
+
 from quadratic to linear
 
 linear in-context length doing this to a pre-trained model ( Llama )
 
 " Linear attentions have shown potential for improving Transformer efficiency, reducing attention's quadratic complexity to linear in sequence length " 
+
+![Screenshot from 2024-02-09 16-00-24](https://github.com/vyomakesh09/notes/assets/54256947/4107e2a4-b541-40c2-b0a4-7621b83aba74)
+
+
+![Screenshot from 2024-02-09 16-00-35](https://github.com/vyomakesh09/notes/assets/54256947/aaeef21c-f92c-4186-a336-6b9f5f4b42f8)
+
 
 Holds promise for 
     - Training linear Transformers from scratch 
@@ -55,6 +64,10 @@ Learnable LInear Attentions for mimicking softmax
     Attention weigth distillation loss 
 
 Benchamarking Hedgehog for Expressivity and Efficiency 
+
+![Screenshot from 2024-02-09 16-11-18](https://github.com/vyomakesh09/notes/assets/54256947/d4e497c5-e2d3-4a56-b4e3-1b12d124f037)
+
+![Screenshot from 2024-02-09 16-11-09](https://github.com/vyomakesh09/notes/assets/54256947/a82b97b5-11a2-42b7-a322-c72f7a8e28bd)
 
 Conclusion 
     we study why prior linear attentions underperform softmax attention and identify two missing properties 
