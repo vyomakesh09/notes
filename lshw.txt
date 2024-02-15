@@ -1,0 +1,2128 @@
+api.freshriverllm.ai
+    description: Computer
+    width: 64 bits
+    capabilities: smp vsyscall32
+  *-core
+       description: Motherboard
+       physical id: 0
+     *-memory
+          description: System memory
+          physical id: 0
+          size: 1026GiB
+     *-cpu:0
+          product: AMD EPYC 7443 24-Core Processor
+          vendor: Advanced Micro Devices [AMD]
+          physical id: 1
+          bus info: cpu@0
+          version: 25.1.1
+          size: 1500MHz
+          capacity: 4035MHz
+          width: 64 bits
+          capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp x86-64 constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 invpcid_single hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca cpufreq
+          configuration: microcode=167776721
+     *-cpu:1
+          product: AMD EPYC 7443 24-Core Processor
+          vendor: Advanced Micro Devices [AMD]
+          physical id: 2
+          bus info: cpu@1
+          version: 25.1.1
+          size: 1495MHz
+          capacity: 4035MHz
+          width: 64 bits
+          capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp x86-64 constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 invpcid_single hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca cpufreq
+          configuration: microcode=167776721
+     *-pci:0
+          description: Host bridge
+          product: Starship/Matisse Root Complex
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+        *-generic UNCLAIMED
+             description: IOMMU
+             product: Milan IOMMU
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 0.2
+             bus info: pci@0000:00:00.2
+             version: 01
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-pci:0
+             description: PCI bridge
+             product: Starship/Matisse GPP Bridge
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 1.1
+             bus info: pci@0000:00:01.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:59 memory:f9000000-faffffff ioport:31000000000(size=274877906944)
+           *-display
+                description: 3D controller
+                product: GA100 [A100 PCIe 80GB]
+                vendor: NVIDIA Corporation
+                physical id: 0
+                bus info: pci@0000:01:00.0
+                version: a1
+                width: 64 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=nvidia latency=0
+                resources: iomemory:3200-31ff iomemory:3100-30ff irq:934 memory:f9000000-f9ffffff memory:32000000000-33fffffffff memory:31000000000-31001ffffff memory:fa000000-fa4fffff memory:31002000000-31029ffffff
+        *-pci:1
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 7.1
+             bus info: pci@0000:00:07.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:61 memory:fc200000-fc2fffff
+           *-generic:0 UNCLAIMED
+                description: Non-Essential Instrumentation
+                product: Starship/Matisse PCIe Dummy Function
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:02:00.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: latency=0
+           *-generic:1
+                description: Encryption controller
+                product: Starship/Matisse PTDMA
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.2
+                bus info: pci@0000:02:00.2
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=ptdma latency=0
+                resources: irq:60 memory:fc200000-fc27ffff memory:fc280000-fc281fff
+        *-pci:2
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 8.1
+             bus info: pci@0000:00:08.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:62 memory:fc000000-fc1fffff
+           *-generic:0 UNCLAIMED
+                description: Non-Essential Instrumentation
+                product: Starship/Matisse Reserved SPP
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:03:00.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: latency=0
+           *-generic:1
+                description: Encryption controller
+                product: Starship/Matisse PTDMA
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.2
+                bus info: pci@0000:03:00.2
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=ptdma latency=0
+                resources: irq:917 memory:fc100000-fc17ffff memory:fc180000-fc181fff
+           *-usb
+                description: USB controller
+                product: Starship USB 3.0 Host Controller
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.3
+                bus info: pci@0000:03:00.3
+                version: 00
+                width: 64 bits
+                clock: 33MHz
+                capabilities: xhci bus_master cap_list
+                configuration: driver=xhci_hcd latency=0
+                resources: irq:93 memory:fc000000-fc0fffff
+        *-serial
+             description: SMBus
+             product: FCH SMBus Controller
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 14
+             bus info: pci@0000:00:14.0
+             version: 61
+             width: 32 bits
+             clock: 66MHz
+             configuration: driver=piix4_smbus latency=0
+             resources: irq:0
+        *-isa
+             description: ISA bridge
+             product: FCH LPC Bridge
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 14.3
+             bus info: pci@0000:00:14.3
+             version: 51
+             width: 32 bits
+             clock: 66MHz
+             capabilities: isa bus_master
+             configuration: latency=0
+           *-pnp00:00
+                product: PnP device PNP0c01
+                physical id: 0
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:01
+                product: PnP device PNP0b00
+                physical id: 1
+                capabilities: pnp
+                configuration: driver=rtc_cmos
+           *-pnp00:02
+                product: PnP device PNP0c02
+                physical id: 2
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:03
+                product: PnP device PNP0501
+                physical id: 3
+                capabilities: pnp
+                configuration: driver=serial
+           *-pnp00:04
+                product: PnP device PNP0501
+                physical id: 4
+                capabilities: pnp
+                configuration: driver=serial
+           *-pnp00:05
+                product: PnP device PNP0c02
+                physical id: 5
+                capabilities: pnp
+                configuration: driver=system
+     *-pci:1
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 101
+          bus info: pci@0000:00:01.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:2
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 102
+          bus info: pci@0000:00:02.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:3
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 103
+          bus info: pci@0000:00:03.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:4
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 104
+          bus info: pci@0000:00:04.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:5
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 105
+          bus info: pci@0000:00:05.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:6
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 106
+          bus info: pci@0000:00:07.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:7
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 107
+          bus info: pci@0000:00:08.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:8
+          description: Host bridge
+          product: Milan Data Fabric; Function 0
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 108
+          bus info: pci@0000:00:18.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:9
+          description: Host bridge
+          product: Milan Data Fabric; Function 1
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 109
+          bus info: pci@0000:00:18.1
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:10
+          description: Host bridge
+          product: Milan Data Fabric; Function 2
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 10a
+          bus info: pci@0000:00:18.2
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:11
+          description: Host bridge
+          product: Milan Data Fabric; Function 3
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 10b
+          bus info: pci@0000:00:18.3
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          configuration: driver=k10temp
+          resources: irq:0
+     *-pci:12
+          description: Host bridge
+          product: Milan Data Fabric; Function 4
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 10c
+          bus info: pci@0000:00:18.4
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:13
+          description: Host bridge
+          product: Milan Data Fabric; Function 5
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 10d
+          bus info: pci@0000:00:18.5
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:14
+          description: Host bridge
+          product: Milan Data Fabric; Function 6
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 10e
+          bus info: pci@0000:00:18.6
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:15
+          description: Host bridge
+          product: Milan Data Fabric; Function 7
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 10f
+          bus info: pci@0000:00:18.7
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:16
+          description: Host bridge
+          product: Milan Data Fabric; Function 0
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 110
+          bus info: pci@0000:00:19.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:17
+          description: Host bridge
+          product: Milan Data Fabric; Function 1
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 111
+          bus info: pci@0000:00:19.1
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:18
+          description: Host bridge
+          product: Milan Data Fabric; Function 2
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 112
+          bus info: pci@0000:00:19.2
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:19
+          description: Host bridge
+          product: Milan Data Fabric; Function 3
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 113
+          bus info: pci@0000:00:19.3
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          configuration: driver=k10temp
+          resources: irq:0
+     *-pci:20
+          description: Host bridge
+          product: Milan Data Fabric; Function 4
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 114
+          bus info: pci@0000:00:19.4
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:21
+          description: Host bridge
+          product: Milan Data Fabric; Function 5
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 115
+          bus info: pci@0000:00:19.5
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:22
+          description: Host bridge
+          product: Milan Data Fabric; Function 6
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 116
+          bus info: pci@0000:00:19.6
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:23
+          description: Host bridge
+          product: Milan Data Fabric; Function 7
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 117
+          bus info: pci@0000:00:19.7
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:24
+          description: Host bridge
+          product: Starship/Matisse Root Complex
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 118
+          bus info: pci@0000:20:00.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+        *-generic UNCLAIMED
+             description: IOMMU
+             product: Milan IOMMU
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 0.2
+             bus info: pci@0000:20:00.2
+             version: 01
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-pci:0
+             description: PCI bridge
+             product: Starship/Matisse GPP Bridge
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 1.1
+             bus info: pci@0000:20:01.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:49 ioport:4000(size=4096) memory:bd000000-bd1fffff ioport:28080200000(size=2097152)
+        *-pci:1
+             description: PCI bridge
+             product: Starship/Matisse GPP Bridge
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 1.2
+             bus info: pci@0000:20:01.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:50 memory:bd200000-bd6fffff ioport:bf400000(size=9437184)
+           *-network:0
+                description: Ethernet interface
+                product: Ethernet Controller 10G X550T
+                vendor: Intel Corporation
+                physical id: 0
+                bus info: pci@0000:22:00.0
+                logical name: enp34s0f0
+                version: 01
+                serial: d0:50:99:fe:bf:d8
+                capacity: 10Gbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list rom ethernet physical tp 100bt-fd 1000bt-fd 10000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=ixgbe driverversion=5.15.0-84-generic firmware=0x80001373, 1.2829.0 latency=0 link=no multicast=yes port=twisted pair
+                resources: irq:123 memory:bf800000-bfbfffff memory:bfc04000-bfc07fff memory:bd200000-bd27ffff memory:bd300000-bd3fffff memory:bd400000-bd4fffff
+           *-network:1
+                description: Ethernet interface
+                product: Ethernet Controller 10G X550T
+                vendor: Intel Corporation
+                physical id: 0.1
+                bus info: pci@0000:22:00.1
+                logical name: enp34s0f1
+                version: 01
+                serial: d0:50:99:fe:bf:d9
+                size: 1Gbit/s
+                capacity: 10Gbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list rom ethernet physical tp 100bt-fd 1000bt-fd 10000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=ixgbe driverversion=5.15.0-84-generic duplex=full firmware=0x80001373, 1.2829.0 ip=199.204.135.66 latency=0 link=yes multicast=yes port=twisted pair speed=1Gbit/s
+                resources: irq:836 memory:bf400000-bf7fffff memory:bfc00000-bfc03fff memory:bd280000-bd2fffff memory:bd500000-bd5fffff memory:bd600000-bd6fffff
+        *-pci:2
+             description: PCI bridge
+             product: Starship/Matisse GPP Bridge
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 1.3
+             bus info: pci@0000:20:01.3
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:51 memory:c1700000-c17fffff ioport:28080400000(size=2097152)
+           *-nvme
+                description: NVMe device
+                product: Micron_7450_MTFDKCC3T2TFS
+                vendor: Micron Technology Inc
+                physical id: 0
+                bus info: pci@0000:23:00.0
+                logical name: /dev/nvme0
+                version: E2MU110
+                serial: 22443D4B3322
+                width: 64 bits
+                clock: 33MHz
+                capabilities: nvme nvm_express bus_master cap_list rom
+                configuration: driver=nvme latency=0 nqn=nqn.2016-08.com.micron:nvme:nvm-subsystem-sn-22443D4B3322 state=live
+                resources: irq:102 memory:c1740000-c177ffff memory:c1700000-c173ffff
+              *-namespace:0
+                   description: NVMe disk
+                   physical id: 0
+                   logical name: hwmon1
+              *-namespace:1
+                   description: NVMe disk
+                   physical id: 2
+                   logical name: /dev/ng0n1
+              *-namespace:2
+                   description: NVMe disk
+                   physical id: 1
+                   bus info: nvme@0:1
+                   logical name: /dev/nvme0n1
+                   configuration: wwid=eui.000000000000000100a075223d4b3322
+        *-pci:3
+             description: PCI bridge
+             product: Starship/Matisse GPP Bridge
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 1.4
+             bus info: pci@0000:20:01.4
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:52 memory:c1600000-c16fffff ioport:28080600000(size=2097152)
+           *-nvme
+                description: NVMe device
+                product: Micron_7450_MTFDKCC3T2TFS
+                vendor: Micron Technology Inc
+                physical id: 0
+                bus info: pci@0000:24:00.0
+                logical name: /dev/nvme1
+                version: E2MU110
+                serial: 22443D4B33B8
+                width: 64 bits
+                clock: 33MHz
+                capabilities: nvme nvm_express bus_master cap_list rom
+                configuration: driver=nvme latency=0 nqn=nqn.2016-08.com.micron:nvme:nvm-subsystem-sn-22443D4B33B8 state=live
+                resources: irq:103 memory:c1640000-c167ffff memory:c1600000-c163ffff
+              *-namespace:0
+                   description: NVMe disk
+                   physical id: 0
+                   logical name: hwmon0
+              *-namespace:1
+                   description: NVMe disk
+                   physical id: 2
+                   logical name: /dev/ng1n1
+              *-namespace:2
+                   description: NVMe disk
+                   physical id: 1
+                   bus info: nvme@1:1
+                   logical name: /dev/nvme1n1
+                   configuration: wwid=eui.000000000000000100a075223d4b33b8
+        *-pci:4
+             description: PCI bridge
+             product: Starship/Matisse GPP Bridge
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 3.1
+             bus info: pci@0000:20:03.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:53 memory:be000000-beffffff ioport:29000000000(size=274877906944)
+           *-display
+                description: 3D controller
+                product: GA100 [A100 PCIe 80GB]
+                vendor: NVIDIA Corporation
+                physical id: 0
+                bus info: pci@0000:25:00.0
+                version: a1
+                width: 64 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=nvidia latency=0
+                resources: iomemory:2a00-29ff iomemory:2900-28ff irq:933 memory:be000000-beffffff memory:2a000000000-2bfffffffff memory:29000000000-29001ffffff memory:29002000000-29029ffffff
+        *-pci:5
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 7.1
+             bus info: pci@0000:20:07.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:55 memory:c1500000-c15fffff
+           *-generic:0 UNCLAIMED
+                description: Non-Essential Instrumentation
+                product: Starship/Matisse PCIe Dummy Function
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:26:00.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: latency=0
+           *-generic:1
+                description: Encryption controller
+                product: Starship/Matisse PTDMA
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.2
+                bus info: pci@0000:26:00.2
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=ptdma latency=0
+                resources: irq:54 memory:c1500000-c157ffff memory:c1580000-c1581fff
+        *-pci:6
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 8.1
+             bus info: pci@0000:20:08.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:56 memory:c1000000-c12fffff
+           *-generic:0 UNCLAIMED
+                description: Non-Essential Instrumentation
+                product: Starship/Matisse Reserved SPP
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:27:00.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: latency=0
+           *-generic:1
+                description: Encryption controller
+                product: Starship/Matisse Cryptographic Coprocessor PSPCPP
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.1
+                bus info: pci@0000:27:00.1
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=ccp latency=0
+                resources: irq:904 memory:c1100000-c11fffff memory:c1282000-c1283fff
+           *-generic:2
+                description: Encryption controller
+                product: Starship/Matisse PTDMA
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.2
+                bus info: pci@0000:27:00.2
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=ptdma latency=0
+                resources: irq:914 memory:c1200000-c127ffff memory:c1280000-c1281fff
+           *-usb
+                description: USB controller
+                product: Starship USB 3.0 Host Controller
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.3
+                bus info: pci@0000:27:00.3
+                version: 00
+                width: 64 bits
+                clock: 33MHz
+                capabilities: xhci bus_master cap_list
+                configuration: driver=xhci_hcd latency=0
+                resources: irq:84 memory:c1000000-c10fffff
+        *-pci:7
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 8.2
+             bus info: pci@0000:20:08.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:57 memory:c1400000-c14fffff
+           *-sata
+                description: SATA controller
+                product: FCH SATA Controller [AHCI mode]
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:28:00.0
+                version: 51
+                width: 32 bits
+                clock: 33MHz
+                capabilities: sata ahci_1.0 bus_master cap_list
+                configuration: driver=ahci latency=0
+                resources: irq:353 memory:c1400000-c14007ff
+        *-pci:8
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 8.3
+             bus info: pci@0000:20:08.3
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:58 memory:c1300000-c13fffff
+           *-sata
+                description: SATA controller
+                product: FCH SATA Controller [AHCI mode]
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:29:00.0
+                version: 51
+                width: 32 bits
+                clock: 33MHz
+                capabilities: sata ahci_1.0 bus_master cap_list
+                configuration: driver=ahci latency=0
+                resources: irq:476 memory:c1300000-c13007ff
+     *-pci:25
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 119
+          bus info: pci@0000:20:01.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:26
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 11a
+          bus info: pci@0000:20:02.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:27
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 11b
+          bus info: pci@0000:20:03.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:28
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 11c
+          bus info: pci@0000:20:04.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:29
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 11d
+          bus info: pci@0000:20:05.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:30
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 11e
+          bus info: pci@0000:20:07.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:31
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 11f
+          bus info: pci@0000:20:08.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:32
+          description: Host bridge
+          product: Starship/Matisse Root Complex
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 120
+          bus info: pci@0000:40:00.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+        *-generic UNCLAIMED
+             description: IOMMU
+             product: Milan IOMMU
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 0.2
+             bus info: pci@0000:40:00.2
+             version: 01
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-pci:0
+             description: PCI bridge
+             product: Starship/Matisse GPP Bridge
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 1.1
+             bus info: pci@0000:40:01.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:42 memory:f5000000-f6ffffff ioport:21000000000(size=274877906944)
+           *-display
+                description: 3D controller
+                product: GA100 [A100 PCIe 80GB]
+                vendor: NVIDIA Corporation
+                physical id: 0
+                bus info: pci@0000:41:00.0
+                version: a1
+                width: 64 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=nvidia latency=0
+                resources: iomemory:2200-21ff iomemory:2100-20ff irq:932 memory:f5000000-f5ffffff memory:22000000000-23fffffffff memory:21000000000-21001ffffff memory:f6000000-f64fffff memory:21002000000-21029ffffff
+        *-pci:1
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 7.1
+             bus info: pci@0000:40:07.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:44 memory:f8300000-f83fffff
+           *-generic:0 UNCLAIMED
+                description: Non-Essential Instrumentation
+                product: Starship/Matisse PCIe Dummy Function
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:42:00.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: latency=0
+           *-generic:1
+                description: Encryption controller
+                product: Starship/Matisse PTDMA
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.2
+                bus info: pci@0000:42:00.2
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=ptdma latency=0
+                resources: irq:43 memory:f8300000-f837ffff memory:f8380000-f8381fff
+        *-pci:2
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 8.1
+             bus info: pci@0000:40:08.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:46 memory:f8200000-f82fffff
+           *-generic:0 UNCLAIMED
+                description: Non-Essential Instrumentation
+                product: Starship/Matisse Reserved SPP
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:43:00.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: latency=0
+           *-generic:1
+                description: Encryption controller
+                product: Starship/Matisse PTDMA
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.2
+                bus info: pci@0000:43:00.2
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=ptdma latency=0
+                resources: irq:911 memory:f8200000-f827ffff memory:f8280000-f8281fff
+        *-pci:3
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 8.2
+             bus info: pci@0000:40:08.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:47 memory:f8100000-f81fffff
+           *-sata
+                description: SATA controller
+                product: FCH SATA Controller [AHCI mode]
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:44:00.0
+                version: 51
+                width: 32 bits
+                clock: 33MHz
+                capabilities: sata ahci_1.0 bus_master cap_list
+                configuration: driver=ahci latency=0
+                resources: irq:107 memory:f8100000-f81007ff
+        *-pci:4
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 8.3
+             bus info: pci@0000:40:08.3
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:48 memory:f8000000-f80fffff
+           *-sata
+                description: SATA controller
+                product: FCH SATA Controller [AHCI mode]
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:45:00.0
+                version: 51
+                width: 32 bits
+                clock: 33MHz
+                capabilities: sata ahci_1.0 bus_master cap_list
+                configuration: driver=ahci latency=0
+                resources: irq:336 memory:f8000000-f80007ff
+     *-pci:33
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 121
+          bus info: pci@0000:40:01.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:34
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 122
+          bus info: pci@0000:40:02.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:35
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 123
+          bus info: pci@0000:40:03.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:36
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 124
+          bus info: pci@0000:40:04.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:37
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 125
+          bus info: pci@0000:40:05.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:38
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 126
+          bus info: pci@0000:40:07.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:39
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 127
+          bus info: pci@0000:40:08.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:40
+          description: Host bridge
+          product: Starship/Matisse Root Complex
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 128
+          bus info: pci@0000:60:00.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+        *-generic UNCLAIMED
+             description: IOMMU
+             product: Milan IOMMU
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 0.2
+             bus info: pci@0000:60:00.2
+             version: 01
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-pci:0
+             description: PCI bridge
+             product: Starship/Matisse GPP Bridge
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 3.1
+             bus info: pci@0000:60:03.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:36 memory:c2000000-c3ffffff ioport:19000000000(size=412316860416)
+           *-display
+                description: 3D controller
+                product: GA100 [A100 PCIe 80GB]
+                vendor: NVIDIA Corporation
+                physical id: 0
+                bus info: pci@0000:61:00.0
+                version: a1
+                width: 64 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=nvidia latency=0
+                resources: iomemory:1a00-19ff iomemory:1900-18ff irq:931 memory:c2000000-c2ffffff memory:1a000000000-1bfffffffff memory:19000000000-19001ffffff memory:c3000000-c34fffff memory:1c000000000-1d3ffffffff memory:19002000000-19029ffffff
+        *-pci:1
+             description: PCI bridge
+             product: Starship PCIe GPP Bridge [1:0]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 5.2
+             bus info: pci@0000:60:05.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:37 ioport:8000(size=4096) memory:c4000000-c50fffff
+           *-pci
+                description: PCI bridge
+                product: AST1150 PCI-to-PCI Bridge
+                vendor: ASPEED Technology, Inc.
+                physical id: 0
+                bus info: pci@0000:62:00.0
+                version: 04
+                width: 32 bits
+                clock: 33MHz
+                capabilities: pci normal_decode bus_master cap_list
+                resources: ioport:8000(size=4096) memory:c4000000-c50fffff
+              *-display
+                   description: VGA compatible controller
+                   product: ASPEED Graphics Family
+                   vendor: ASPEED Technology, Inc.
+                   physical id: 0
+                   bus info: pci@0000:63:00.0
+                   logical name: /dev/fb0
+                   version: 41
+                   width: 32 bits
+                   clock: 33MHz
+                   capabilities: vga_controller bus_master cap_list rom fb
+                   configuration: depth=32 driver=ast latency=0 resolution=1024,768
+                   resources: irq:667 memory:c4000000-c4ffffff memory:c5000000-c501ffff ioport:8000(size=128) memory:c0000-dffff
+        *-pci:2
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 7.1
+             bus info: pci@0000:60:07.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:39 memory:c7100000-c71fffff
+           *-generic:0 UNCLAIMED
+                description: Non-Essential Instrumentation
+                product: Starship/Matisse PCIe Dummy Function
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:64:00.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: latency=0
+           *-generic:1
+                description: Encryption controller
+                product: Starship/Matisse PTDMA
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.2
+                bus info: pci@0000:64:00.2
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=ptdma latency=0
+                resources: irq:38 memory:c7100000-c717ffff memory:c7180000-c7181fff
+        *-pci:3
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 8.1
+             bus info: pci@0000:60:08.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:41 memory:c7000000-c70fffff
+           *-generic:0 UNCLAIMED
+                description: Non-Essential Instrumentation
+                product: Starship/Matisse Reserved SPP
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:65:00.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: latency=0
+           *-generic:1
+                description: Encryption controller
+                product: Starship/Matisse PTDMA
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.2
+                bus info: pci@0000:65:00.2
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=ptdma latency=0
+                resources: irq:902 memory:c7000000-c707ffff memory:c7080000-c7081fff
+     *-pci:41
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 129
+          bus info: pci@0000:60:01.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:42
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 12a
+          bus info: pci@0000:60:02.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:43
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 12b
+          bus info: pci@0000:60:03.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:44
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 12c
+          bus info: pci@0000:60:04.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:45
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 12d
+          bus info: pci@0000:60:05.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:46
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 12e
+          bus info: pci@0000:60:07.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:47
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 12f
+          bus info: pci@0000:60:08.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:48
+          description: Host bridge
+          product: Starship/Matisse Root Complex
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 130
+          bus info: pci@0000:80:00.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+        *-generic UNCLAIMED
+             description: IOMMU
+             product: Milan IOMMU
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 0.2
+             bus info: pci@0000:80:00.2
+             version: 01
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-pci:0
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 7.1
+             bus info: pci@0000:80:07.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:82 memory:b2200000-b22fffff
+           *-generic:0 UNCLAIMED
+                description: Non-Essential Instrumentation
+                product: Starship/Matisse PCIe Dummy Function
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:81:00.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: latency=0
+           *-generic:1
+                description: Encryption controller
+                product: Starship/Matisse PTDMA
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.2
+                bus info: pci@0000:81:00.2
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=ptdma latency=0
+                resources: irq:81 memory:b2200000-b227ffff memory:b2280000-b2281fff
+        *-pci:1
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 8.1
+             bus info: pci@0000:80:08.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:83 memory:b2000000-b21fffff
+           *-generic:0 UNCLAIMED
+                description: Non-Essential Instrumentation
+                product: Starship/Matisse Reserved SPP
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:82:00.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: latency=0
+           *-generic:1
+                description: Encryption controller
+                product: Starship/Matisse PTDMA
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.2
+                bus info: pci@0000:82:00.2
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=ptdma latency=0
+                resources: irq:929 memory:b2100000-b217ffff memory:b2180000-b2181fff
+           *-usb
+                description: USB controller
+                product: Starship USB 3.0 Host Controller
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.3
+                bus info: pci@0000:82:00.3
+                version: 00
+                width: 64 bits
+                clock: 33MHz
+                capabilities: xhci bus_master cap_list
+                configuration: driver=xhci_hcd latency=0
+                resources: irq:133 memory:b2000000-b20fffff
+     *-pci:49
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 131
+          bus info: pci@0000:80:01.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:50
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 132
+          bus info: pci@0000:80:02.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:51
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 133
+          bus info: pci@0000:80:03.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:52
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 134
+          bus info: pci@0000:80:04.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:53
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 135
+          bus info: pci@0000:80:05.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:54
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 136
+          bus info: pci@0000:80:07.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:55
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 137
+          bus info: pci@0000:80:08.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:56
+          description: Host bridge
+          product: Starship/Matisse Root Complex
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 138
+          bus info: pci@0000:a0:00.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+        *-generic UNCLAIMED
+             description: IOMMU
+             product: Milan IOMMU
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 0.2
+             bus info: pci@0000:a0:00.2
+             version: 01
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-pci:0
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 7.1
+             bus info: pci@0000:a0:07.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:77 memory:b6800000-b68fffff
+           *-generic:0 UNCLAIMED
+                description: Non-Essential Instrumentation
+                product: Starship/Matisse PCIe Dummy Function
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:a1:00.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: latency=0
+           *-generic:1
+                description: Encryption controller
+                product: Starship/Matisse PTDMA
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.2
+                bus info: pci@0000:a1:00.2
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=ptdma latency=0
+                resources: irq:76 memory:b6800000-b687ffff memory:b6880000-b6881fff
+        *-pci:1
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 8.1
+             bus info: pci@0000:a0:08.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:78 memory:b6300000-b65fffff
+           *-generic:0 UNCLAIMED
+                description: Non-Essential Instrumentation
+                product: Starship/Matisse Reserved SPP
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:a2:00.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: latency=0
+           *-generic:1
+                description: Encryption controller
+                product: Starship/Matisse Cryptographic Coprocessor PSPCPP
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.1
+                bus info: pci@0000:a2:00.1
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=ccp latency=0
+                resources: irq:907 memory:b6400000-b64fffff memory:b6582000-b6583fff
+           *-generic:2
+                description: Encryption controller
+                product: Starship/Matisse PTDMA
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.2
+                bus info: pci@0000:a2:00.2
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=ptdma latency=0
+                resources: irq:926 memory:b6500000-b657ffff memory:b6580000-b6581fff
+           *-usb
+                description: USB controller
+                product: Starship USB 3.0 Host Controller
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.3
+                bus info: pci@0000:a2:00.3
+                version: 00
+                width: 64 bits
+                clock: 33MHz
+                capabilities: xhci bus_master cap_list
+                configuration: driver=xhci_hcd latency=0
+                resources: irq:124 memory:b6300000-b63fffff
+        *-pci:2
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 8.2
+             bus info: pci@0000:a0:08.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:79 memory:b6700000-b67fffff
+           *-sata
+                description: SATA controller
+                product: FCH SATA Controller [AHCI mode]
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:a3:00.0
+                version: 51
+                width: 32 bits
+                clock: 33MHz
+                capabilities: sata ahci_1.0 bus_master cap_list
+                configuration: driver=ahci latency=0
+                resources: irq:633 memory:b6700000-b67007ff
+        *-pci:3
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 8.3
+             bus info: pci@0000:a0:08.3
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:80 memory:b6600000-b66fffff
+           *-sata
+                description: SATA controller
+                product: FCH SATA Controller [AHCI mode]
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:a4:00.0
+                version: 51
+                width: 32 bits
+                clock: 33MHz
+                capabilities: sata ahci_1.0 bus_master cap_list
+                configuration: driver=ahci latency=0
+                resources: irq:650 memory:b6600000-b66007ff
+     *-pci:57
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 139
+          bus info: pci@0000:a0:01.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:58
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 13a
+          bus info: pci@0000:a0:02.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:59
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 13b
+          bus info: pci@0000:a0:03.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:60
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 13c
+          bus info: pci@0000:a0:04.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:61
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 13d
+          bus info: pci@0000:a0:05.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:62
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 13e
+          bus info: pci@0000:a0:07.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:63
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 13f
+          bus info: pci@0000:a0:08.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:64
+          description: Host bridge
+          product: Starship/Matisse Root Complex
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 140
+          bus info: pci@0000:c0:00.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+        *-generic UNCLAIMED
+             description: IOMMU
+             product: Milan IOMMU
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 0.2
+             bus info: pci@0000:c0:00.2
+             version: 01
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-pci:0
+             description: PCI bridge
+             product: Starship/Matisse GPP Bridge
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 3.1
+             bus info: pci@0000:c0:03.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:68 memory:bae00000-baefffff ioport:48110400000(size=29360128)
+           *-network:0
+                description: Ethernet interface
+                product: Ethernet Controller XL710 for 40GbE QSFP+
+                vendor: Intel Corporation
+                physical id: 0
+                bus info: pci@0000:c1:00.0
+                logical name: enp193s0f0
+                version: 02
+                serial: 40:a6:b7:85:d0:d0
+                capacity: 40Gbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list rom ethernet physical 40000bt-fd autonegotiation
+                configuration: autonegotiation=off broadcast=yes driver=i40e driverversion=5.15.0-84-generic firmware=9.20 0x8000d893 1.3353.0 latency=0 link=no multicast=yes
+                resources: iomemory:4810-480f iomemory:4810-480f irq:264 memory:48110800000-48110ffffff memory:48111c00000-48111c07fff memory:bae80000-baefffff memory:48110400000-481107fffff memory:48111c10000-48111d0ffff
+           *-network:1
+                description: Ethernet interface
+                product: Ethernet Controller XL710 for 40GbE QSFP+
+                vendor: Intel Corporation
+                physical id: 0.1
+                bus info: pci@0000:c1:00.1
+                logical name: enp193s0f1
+                version: 02
+                serial: 40:a6:b7:85:d0:d1
+                capacity: 40Gbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list rom ethernet physical 40000bt-fd autonegotiation
+                configuration: autonegotiation=off broadcast=yes driver=i40e driverversion=5.15.0-84-generic firmware=9.20 0x8000d893 1.3353.0 latency=0 link=no multicast=yes
+                resources: iomemory:4810-480f iomemory:4810-480f irq:264 memory:48111000000-481117fffff memory:48111c08000-48111c0ffff memory:bae00000-bae7ffff memory:48111800000-48111bfffff memory:48111d10000-48111e0ffff
+        *-pci:1
+             description: PCI bridge
+             product: Starship/Matisse GPP Bridge
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 3.3
+             bus info: pci@0000:c0:03.3
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:69 ioport:d000(size=4096) memory:ba800000-ba9fffff ioport:50110000000(size=2097152)
+           *-sas
+                description: Serial Attached SCSI controller
+                product: Fusion-MPT 12GSAS/PCIe Secure SAS38xx
+                vendor: Broadcom / LSI
+                physical id: 0
+                bus info: pci@0000:c2:00.0
+                version: 00
+                width: 64 bits
+                clock: 33MHz
+                capabilities: sas bus_master cap_list rom
+                configuration: driver=mpt3sas latency=0
+                resources: iomemory:5010-500f iomemory:5010-500f irq:666 memory:50110100000-501101fffff memory:50110000000-501100fffff memory:ba800000-ba8fffff ioport:d000(size=256) memory:ba900000-ba93ffff
+        *-pci:2
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 7.1
+             bus info: pci@0000:c0:07.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:71 memory:bad00000-badfffff
+           *-generic:0 UNCLAIMED
+                description: Non-Essential Instrumentation
+                product: Starship/Matisse PCIe Dummy Function
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:c3:00.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: latency=0
+           *-generic:1
+                description: Encryption controller
+                product: Starship/Matisse PTDMA
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.2
+                bus info: pci@0000:c3:00.2
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=ptdma latency=0
+                resources: irq:70 memory:bad00000-bad7ffff memory:bad80000-bad81fff
+        *-pci:3
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 8.1
+             bus info: pci@0000:c0:08.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:73 memory:bac00000-bacfffff
+           *-generic:0 UNCLAIMED
+                description: Non-Essential Instrumentation
+                product: Starship/Matisse Reserved SPP
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:c4:00.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: latency=0
+           *-generic:1
+                description: Encryption controller
+                product: Starship/Matisse PTDMA
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.2
+                bus info: pci@0000:c4:00.2
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=ptdma latency=0
+                resources: irq:923 memory:bac00000-bac7ffff memory:bac80000-bac81fff
+        *-pci:4
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 8.2
+             bus info: pci@0000:c0:08.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:74 memory:bab00000-babfffff
+           *-sata
+                description: SATA controller
+                product: FCH SATA Controller [AHCI mode]
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:c5:00.0
+                version: 51
+                width: 32 bits
+                clock: 33MHz
+                capabilities: sata ahci_1.0 bus_master cap_list
+                configuration: driver=ahci latency=0
+                resources: irq:599 memory:bab00000-bab007ff
+        *-pci:5
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 8.3
+             bus info: pci@0000:c0:08.3
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:75 memory:baa00000-baafffff
+           *-sata
+                description: SATA controller
+                product: FCH SATA Controller [AHCI mode]
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:c6:00.0
+                version: 51
+                width: 32 bits
+                clock: 33MHz
+                capabilities: sata ahci_1.0 bus_master cap_list
+                configuration: driver=ahci latency=0
+                resources: irq:616 memory:baa00000-baa007ff
+     *-pci:65
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 141
+          bus info: pci@0000:c0:01.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:66
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 142
+          bus info: pci@0000:c0:02.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:67
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 143
+          bus info: pci@0000:c0:03.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:68
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 144
+          bus info: pci@0000:c0:04.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:69
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 145
+          bus info: pci@0000:c0:05.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:70
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 146
+          bus info: pci@0000:c0:07.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:71
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 147
+          bus info: pci@0000:c0:08.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:72
+          description: Host bridge
+          product: Starship/Matisse Root Complex
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 148
+          bus info: pci@0000:e0:00.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+        *-generic UNCLAIMED
+             description: IOMMU
+             product: Milan IOMMU
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 0.2
+             bus info: pci@0000:e0:00.2
+             version: 01
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-pci:0
+             description: PCI bridge
+             product: Starship/Matisse GPP Bridge
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 3.1
+             bus info: pci@0000:e0:03.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:63 ioport:480c0000000(size=336592896)
+           *-generic:0 UNCLAIMED
+                description: Processing accelerators
+                product: Xilinx Corporation
+                vendor: Xilinx Corporation
+                physical id: 0
+                bus info: pci@0000:e1:00.0
+                version: 00
+                width: 64 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: latency=0
+                resources: iomemory:4800-47ff iomemory:4800-47ff memory:480d2000000-480d3ffffff memory:480d4040000-480d407ffff
+           *-generic:1 UNCLAIMED
+                description: Processing accelerators
+                product: Xilinx Corporation
+                vendor: Xilinx Corporation
+                physical id: 0.1
+                bus info: pci@0000:e1:00.1
+                version: 00
+                width: 64 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: latency=0
+                resources: iomemory:4800-47ff iomemory:4800-47ff iomemory:4800-47ff memory:480d0000000-480d1ffffff memory:480d4000000-480d403ffff memory:480c0000000-480cfffffff
+        *-pci:1
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 7.1
+             bus info: pci@0000:e0:07.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:65 memory:f2100000-f21fffff
+           *-generic:0 UNCLAIMED
+                description: Non-Essential Instrumentation
+                product: Starship/Matisse PCIe Dummy Function
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:e2:00.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: latency=0
+           *-generic:1
+                description: Encryption controller
+                product: Starship/Matisse PTDMA
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.2
+                bus info: pci@0000:e2:00.2
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=ptdma latency=0
+                resources: irq:64 memory:f2100000-f217ffff memory:f2180000-f2181fff
+        *-pci:2
+             description: PCI bridge
+             product: Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 8.1
+             bus info: pci@0000:e0:08.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:67 memory:f2000000-f20fffff
+           *-generic:0 UNCLAIMED
+                description: Non-Essential Instrumentation
+                product: Starship/Matisse Reserved SPP
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0
+                bus info: pci@0000:e3:00.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: latency=0
+           *-generic:1
+                description: Encryption controller
+                product: Starship/Matisse PTDMA
+                vendor: Advanced Micro Devices, Inc. [AMD]
+                physical id: 0.2
+                bus info: pci@0000:e3:00.2
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=ptdma latency=0
+                resources: irq:920 memory:f2000000-f207ffff memory:f2080000-f2081fff
+     *-pci:73
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 149
+          bus info: pci@0000:e0:01.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:74
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 14a
+          bus info: pci@0000:e0:02.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:75
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 14b
+          bus info: pci@0000:e0:03.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:76
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 14c
+          bus info: pci@0000:e0:04.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:77
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 14d
+          bus info: pci@0000:e0:05.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:78
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 14e
+          bus info: pci@0000:e0:07.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:79
+          description: Host bridge
+          product: Starship/Matisse PCIe Dummy Host Bridge
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 14f
+          bus info: pci@0000:e0:08.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+  *-input:0
+       product: Power Button
+       physical id: 1
+       logical name: input0
+       logical name: /dev/input/event0
+       capabilities: platform
+  *-input:1
+       product: Power Button
+       physical id: 2
+       logical name: input1
+       logical name: /dev/input/event1
+       capabilities: platform
+  *-input:2
+       product: American Megatrends Inc. Virtual Keyboard and Mouse
+       physical id: 3
+       logical name: input2
+       logical name: /dev/input/event2
+       logical name: input2::capslock
+       logical name: input2::compose
+       logical name: input2::kana
+       logical name: input2::numlock
+       logical name: input2::scrolllock
+       capabilities: usb
+  *-input:3
+       product: American Megatrends Inc. Virtual Keyboard and Mouse
+       physical id: 4
+       logical name: input3
+       logical name: /dev/input/event3
+       logical name: /dev/input/mouse0
+       capabilities: usb
+  *-network
+       description: Ethernet interface
+       physical id: 5
+       bus info: usb@3:1.3
+       logical name: enx06dbbcbb7eb5
+       serial: 06:db:bc:bb:7e:b5
+       capabilities: ethernet physical
+       configuration: autonegotiation=off broadcast=yes driver=cdc_ether driverversion=5.15.0-84-generic duplex=half firmware=CDC Ethernet Device link=yes multicast=yes port=twisted pair
