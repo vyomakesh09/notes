@@ -10,7 +10,7 @@ Likekly to be a replacement to softmax attention
 
 from quadratic to linear
 
-linear in-context length doing this to a pre-trained model ( Llama )
+linear in-context length doing this to a pre-trained model -0000poo( Llama )
 
 " Linear attentions have shown potential for improving Transformer efficiency, reducing attention's quadratic complexity to linear in sequence length " 
 
@@ -23,7 +23,7 @@ linear in-context length doing this to a pre-trained model ( Llama )
 Holds promise for 
     - Training linear Transformers from scratch 
     - 'Finetuned-conversion' of taks-specific Transformers into linear versions that recover task performance and 
-    - 'Pretained-conversion' of Transformers such as LLMs into linear versions finetunable on downstream tasks 
+    - 'Pretained-conversion' of Transformers such as LLMs into linear versions finetunable on downstream ta sks 
 
 Performance Gap: " linear attention often under-performs standard softmax attention in quality " 
 
@@ -79,3 +79,26 @@ Hedgehog -> competitive performance with softmax-based attention in
     - training from scratch 
     - finetuned-conversion and 
     - pretrained conversion 
+
+
+
+HedgeHog Implementation deatails
+
+    -> mechanics for hedge hog feature map 
+        - numerical stability 
+        - negaiton mapping 
+    -> hedgehog feature map and model architecture
+    
+
+
+    -> hedgehog distillation and finetuning  ( obtain linear attention transformers )
+        
+        - trainning-from-scratch:
+            + insert HH MLP for each query and key  projections of randomly initialized transformers 
+        - finetuned/ pretrained conversions:
+            + attention distillation 
+                to compute soft cross-entropy or KL divergence bw the 'predicted' linear attention weights and 'ground-truth' softmax attention weigths 
+            + original parameter finetuing
+                unfreeze all model weights and train with a standard task-specific loss function 
+
+                
